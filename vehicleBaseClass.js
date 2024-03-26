@@ -74,18 +74,18 @@ class Vehicle {
 
     typeOfVehicle(wheels) {
         if (this.numberOfWheels == 8 && 8 == wheels) {
-            console.log(this.model + " " + this.make + " is a Truck");
+            return (this.model + " " + this.make + " is a Truck");
         } else if (this.numberOfWheels == 4 && 4 == wheels) {
-            console.log(this.model + " " + this.make + " is a CAr");
+            return (this.model + " " + this.make + " is a Car");
         } else if (this.numberOfWheels == 2 && 2 == wheels) {
-            console.log(this.model + " " + this.make + " is a Bike");
+            return (this.model + " " + this.make + " is a Bike");
         } else {
-            console.log("Unknown type of vehicle");
+            return ("Unknown type of vehicle");
         }
     }
 }
 
 //This exports things you want to use from this "module", more info in readme
-module.exports = {
-    Vehicle
-}
+// module.exports = {
+//     Vehicle
+// }
